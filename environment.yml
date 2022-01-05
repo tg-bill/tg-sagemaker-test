@@ -1,0 +1,24 @@
+name: tigergraph-ml
+channels:
+  - pyg
+  - pytorch
+  - conda-forge
+dependencies:
+  - conda
+  - matplotlib-base
+  - numpy
+  - pandas
+  - pip
+  - python=3.9
+  - scipy
+  - jq
+  - pytorch
+  - pyg
+  - jupyterlab-git
+  - jupyterlab_code_formatter
+  - black
+  - isort
+  - pip:
+    - pyTigerGraph
+    - tgml>=0.1.5
+    - tensorboard
