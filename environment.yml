@@ -1,6 +1,6 @@
 name: tigergraph-ml
 channels:
-  - pyg=2.0.2
+  - pyg
   - pytorch
   - conda-forge
 dependencies:
@@ -10,6 +10,7 @@ dependencies:
   - pandas
   - pip
   - python=3.9
+  - pyg=2.0.2
   - scipy
   - jq
   - pytorch
