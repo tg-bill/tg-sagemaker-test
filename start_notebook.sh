@@ -13,7 +13,7 @@ conda env create -f https://raw.githubusercontent.com/parkererickson/tg-sagemake
 source /home/ec2-user/anaconda3/bin/activate tigergraph-ml
 
 # Expose environment as kernel
-python -m ipykernel install --user --name tigergraph-ml --display-name TigerGraph-ML
+python -m ipykernel install --user --name tigergraph-ml --display-name TigerGraph-ML-PyG
 
 # Deactivate environment
 source /home/ec2-user/anaconda3/bin/deactivate
