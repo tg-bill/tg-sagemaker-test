@@ -64,10 +64,22 @@ Where `tgml-pyg-cpu` is the name of the Lifecycle Configuration, and `start_note
 
 ### Create Notebook
 #### GUI Version
-##### Select the notebook instance type
-##### Add Lifecycle Configuration to Notebook
-##### Add Tutorial GitHub Repo
-#### CLI Version
 
+From the SageMaker Console homepage, click the **Notebook instances** button underneath the **Notebook** tab. This will bring you to a page like this:
+![Create Notebook Page](doc/createnotebook.png)
+
+Click the **Create notebook** button to create a new notebook instance, which will bring you to a page like this:
+![Create Notebook Page](doc/confignotebook.png)
+##### Select the notebook instance type
+Once on the notebook instance configuration page, you can select the notebook instance type. The default is `ml.t2.medium`. Refer to AWS documentation for more information. You also name your instance (I named mine `tgml-pyg-cpu`) here.
+
+##### Add Lifecycle Configuration to Notebook
+Under the **Additional configuration** tab, select the **Lifecycle configuration** you created earlier.
+
+##### Add Tutorial GitHub Repo
+If you want to add the `tgml` tutorial repository (or other Git repositories), scroll down to the **Git repositories** tab and add the link to repository. The tutorial repository is `https://github.com/tg-bill/mlworkbench-docs.git`.
+
+![Git Repo](doc/addgitrepo.png)
+#### CLI Version
 
 ## Train a Model
