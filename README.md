@@ -85,5 +85,19 @@ Once that is completed, click the **Create notebook instance** button to create 
 
 ![Notebook Instance Created](doc/notebookcreated.png)
 #### CLI Version
+To create a notebook instance using the SageMaker CLI, you can use the following command:
+```sh
+aws sagemaker create-notebook-instance --notebook-instance-name tgml-pyg-cpu-cli --instance-type ml.t2.medium --lifecycle-config-name tgml-pyg-cpu --default-code-repository https://github.com/tg-bill/mlworkbench-docs.git --role-arn YOUR_ROLE_ARN_HERE
+```
+Replacing `YOUR_ROLE_ARN_HERE` with the ARN of the SageMaker role you can find in the AWS IAM console.
 
 ## Train a Model
+Once you have created a notebook instance, you can train a model using the notebook. From the **Notebook instances** page, click on the **JupyterLab** link to open the notebook.
+
+![Click JupyterLab](doc/notebookrunning.png)
+
+This will take you to the JupyterLab page, where you can browse through the notebooks included in the repository we included. Once you find the notebook you want to run, a box will appear to select the conda environment to run the notebook in. Select the `TigerGraph-ML-PyG` environment.
+
+![Select Environment](doc/selectenv.png)
+
+Once you have selected the environment, you can run the notebook.
