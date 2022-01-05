@@ -10,11 +10,10 @@ dependencies:
   - pandas
   - pip
   - python=3.9
-  - pyg=2.0.2
   - scipy
   - jq
   - pytorch
-  - pyg
+  - pyg=2.0.2
   - jupyterlab-git
   - jupyterlab_code_formatter
   - black
