@@ -13,7 +13,7 @@ dependencies:
   - scipy
   - jq
   - pytorch
-  - pyg=2.0.2
+  - pyg
   - jupyterlab-git
   - jupyterlab_code_formatter
   - black
