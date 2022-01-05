@@ -39,13 +39,35 @@ EOF
 #### CPU Configuration
 For the CPU  instance, you can directly use the ```start_notebook.sh``` script. By default, it uses the ```environment-cpu.yml``` file.
 
-#### Add Configuration to Lifecycle Configuration (GUI Version)
+#### Add Script to Lifecycle Configuration (GUI Version)
 Once you have copied the configuration script, we can create a new Lifecycle configuration using the SageMaker web UI.
 
+![SageMaker Homepage](doc/sagemakerhome.png)
+From the SageMaker Console homepage, click the **Lifecycle configurations** tab under the **Notebook** tab. This will bring you to a page like this:
+
+![Empty LC Page](doc/emptylc.png)
+Click the **Create configuration** button to create a new lifecycle configuration, which will bring you to a page like this:
+
+![Create LC Page](doc/createlc.png)
+Enter a name for the configuration (I named mine `tgml-pyg-cpu`). Then, copy the script from `start_notebook.sh` (and edit it to use the GPU version if desired), and paste it into the **Start notebook** section of the **Scripts** tab. Then, click the **Create configuration** button to create the configuration. If all goes right, you should see something like this:
+
+![LC Created](doc/lc.png)
+
+#### Add Script to Lifecycle Configuration (CLI Version)
+Once you have copied the configuration script, we can create a new Lifecycle configuration using the SageMaker CLI. If you have the AWS CLI installed and configured, you can use the following command to create a new lifecycle configuration:
+```sh
+aws sagemaker create-notebook-instance-lifecycle-config --notebook-instance-lifecycle-config-name tgml-pyg-cpu --on-start Content=$((cat start_notebook.sh|| echo "")| base64)
+```
+Where `tgml-pyg-cpu` is the name of the Lifecycle Configuration, and `start_notebook.sh` is the script found in the home directory of this repo.
+
+**Note:** You will have to edit the script to use the GPU version if you want to use a GPU instance.
+
 ### Create Notebook
+#### GUI Version
+##### Select the notebook instance type
+##### Add Lifecycle Configuration to Notebook
+##### Add Tutorial GitHub Repo
+#### CLI Version
 
-#### Add Lifecycle Configuration to Notebook
-
-#### Add Tutorial GitHub Repo
 
 ## Train a Model
