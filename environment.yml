@@ -18,6 +18,7 @@ dependencies:
   - jupyterlab_code_formatter
   - black
   - isort
+  - cpuonly
   - pip:
     - pyTigerGraph
     - tgml>=0.1.5
