@@ -80,6 +80,10 @@ Under the **Additional configuration** tab, select the **Lifecycle configuration
 If you want to add the `tgml` tutorial repository (or other Git repositories), scroll down to the **Git repositories** tab and add the link to repository. The tutorial repository is `https://github.com/tg-bill/mlworkbench-docs.git`.
 
 ![Git Repo](doc/addgitrepo.png)
+
+Once that is completed, click the **Create notebook instance** button to create the notebook instance. You should see something like this:
+
+![Notebook Instance Created](doc/notebookcreated.png)
 #### CLI Version
 
 ## Train a Model
