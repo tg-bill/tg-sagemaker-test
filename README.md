@@ -100,4 +100,4 @@ This will take you to the JupyterLab page, where you can browse through the note
 
 ![Select Environment](doc/selectenv.png)
 
-Once you have selected the environment, you can run the notebook.
+Once you have selected the environment, you can run the notebook. Be sure to change the connection details to your own database.
