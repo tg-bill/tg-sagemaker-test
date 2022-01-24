@@ -5,7 +5,6 @@ channels:
   - conda-forge
 dependencies:
   - conda
-  - cudatoolkit-dev=11.0
   - matplotlib-base
   - numpy
   - pandas
@@ -14,7 +13,7 @@ dependencies:
   - scipy
   - jq
   - pytorch
-  - dgl
+  - dgl-cuda11.0
   - jupyterlab-git
   - jupyterlab_code_formatter
   - black

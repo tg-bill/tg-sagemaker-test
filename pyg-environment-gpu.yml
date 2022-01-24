@@ -5,7 +5,6 @@ channels:
   - conda-forge
 dependencies:
   - conda
-  - cudatoolkit-dev=11.0
   - matplotlib-base
   - numpy
   - pandas
