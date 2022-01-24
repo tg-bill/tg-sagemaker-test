@@ -6,6 +6,7 @@ channels:
 dependencies:
   - conda
   - matplotlib-base
+  - cudatoolkit=11.1
   - numpy
   - pandas
   - pip
