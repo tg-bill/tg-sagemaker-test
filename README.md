@@ -5,7 +5,7 @@
 As we are utilizing SageMaker, we also hosted our TigerGraph database on a Amazon EC2 m4.4xlarge instance. You can host your database on any sufficiently powerful, publicly accessible compute instance however. Once the instance was provisioned, ssh into the instance, and follow the TigerGraph installation instructions found here: [https://docs.tigergraph.com/tigergraph-server/current/installation/install](https://docs.tigergraph.com/tigergraph-server/current/installation/install).
 
 ### Install Graph Data Processing Service
-In addition to the TigerGraph database server, we need to install an additional component called the Graph Data Processing Service, or GDPS. This will facilitate the graph sampling and other functionality needed to extract data from the graph for the model training process. To install the GDPS, follow the next steps in the home directory of the user where TigerGraph is installed.
+In addition to the TigerGraph database server, we need to install an additional component called the Graph Data Processing Service, or GDPS. This will facilitate the graph sampling and other functionality needed to extract data from the graph for the model training process. To install the GDPS, follow the steps [here](https://github.com/TigerGraph-DevLabs/GDPS) in the home directory of the user where TigerGraph is installed.
 
 
 ## Setup SageMaker
