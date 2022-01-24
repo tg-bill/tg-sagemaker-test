@@ -5,6 +5,7 @@ channels:
   - conda-forge
 dependencies:
   - conda
+  - cudatoolkit-dev=11.0
   - matplotlib-base
   - numpy
   - pandas
@@ -18,8 +19,7 @@ dependencies:
   - jupyterlab_code_formatter
   - black
   - isort
-  - cpuonly
   - pip:
     - pyTigerGraph
-    - tgml>=0.1.5
+    - tgml[pyg]
     - tensorboard
