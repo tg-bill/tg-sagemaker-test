@@ -6,7 +6,6 @@ channels:
 dependencies:
   - conda
   - matplotlib-base
-  - cudatoolkit=11.1
   - numpy
   - pandas
   - pip
@@ -14,7 +13,7 @@ dependencies:
   - scipy
   - jq
   - pytorch
-  - dgl-cuda11.0
+  - dgl-cuda11.1
   - jupyterlab-git
   - jupyterlab_code_formatter
   - black
