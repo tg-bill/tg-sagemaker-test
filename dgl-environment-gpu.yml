@@ -14,7 +14,7 @@ dependencies:
   - scipy
   - jq
   - pytorch
-  - dgl-cuda11.1
+  - dgl-cuda11.3
   - jupyterlab-git
   - jupyterlab_code_formatter
   - black
