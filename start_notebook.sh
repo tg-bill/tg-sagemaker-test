@@ -7,7 +7,7 @@ sudo -u ec2-user -i <<EOF
 echo ". /home/ec2-user/anaconda3/etc/profile.d/conda.sh" >> ~/.bashrc
 
 # Create custom conda environment
-conda env create -f https://raw.githubusercontent.com/parkererickson/tg-sagemaker-test/main/environment-cpu.yml
+conda env create -f https://raw.githubusercontent.com/parkererickson/tg-sagemaker-test/main/pyg-environment-cpu.yml
 
 # Activate our freshly created environment
 source /home/ec2-user/anaconda3/bin/activate tigergraph-ml
