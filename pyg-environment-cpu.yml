@@ -4,22 +4,20 @@ channels:
   - pytorch
   - conda-forge
 dependencies:
+  - python=3.9
   - conda
+  - pip
   - matplotlib-base
   - numpy
-  - pandas
-  - pip
-  - python=3.9
   - scipy
-  - jq
+  - pandas
   - pytorch
-  - pyg
-  - jupyterlab-git
-  - jupyterlab_code_formatter
-  - black
-  - isort
   - cpuonly
+  - pyg
+  - tensorboard
+  - jupyterlab-git
   - pip:
     - pyTigerGraph
     - tgml[pyg]
-    - tensorboard
+    - tigergraph-mlworkbench
+    
