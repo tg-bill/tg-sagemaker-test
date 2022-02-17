@@ -19,5 +19,4 @@ dependencies:
   - pip:
     - pyTigerGraph
     - tgml[pyg]
-    - tigergraph-mlworkbench
     
