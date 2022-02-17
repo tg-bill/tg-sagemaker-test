@@ -2,6 +2,7 @@ name: tigergraph-ml
 channels:
   - pyg
   - pytorch
+  - dglteam
   - conda-forge
 dependencies:
   - python=3.9
@@ -14,9 +15,10 @@ dependencies:
   - pytorch
   - cpuonly
   - pyg
+  - dgl
   - tensorboard
   - jupyterlab-git
   - pip:
     - pyTigerGraph
-    - tgml[pyg]
+    - tgml
     
